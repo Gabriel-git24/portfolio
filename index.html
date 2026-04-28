@@ -3,33 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Osei | Data Scientist Portfolio</title>
+    <title>Gabriel Osei | Data Scientist</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Outfit', sans-serif;
-            background-color: #fcfcfc;
-            color: #1a202c;
-        }
-        .section-accent {
-            border-left: 4px solid #047857; /* Emerald Green */
-        }
-        .adinkra-watermark {
-            opacity: 0.05;
-            position: absolute;
-            z-index: -1;
-        }
+        body { font-family: 'Outfit', sans-serif; background-color: #fcfcfc; color: #1a202c; }
+        .section-accent { border-left: 4px solid #047857; transition: all 0.3s ease; }
+        .section-accent:hover { border-left: 4px solid #FFD700; background-color: #f8fafc; }
+        .tech-pill { background-color: #f1f5f9; color: #475569; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; }
     </style>
 </head>
-<body class="p-6 md:p-16">
+<body class="p-6 md:p-16 lg:p-24">
 
     <nav class="max-w-4xl mx-auto flex justify-between items-center mb-20">
-        <img src="https://raw.githubusercontent.com/thebe-digital/adinkra-icons/master/svg/gye-nyame.svg" 
-             class="w-10 opacity-80" alt="Gye Nyame">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Gye_Nyame.svg" 
+             class="w-10 opacity-90" alt="Gye Nyame" 
+             style="filter: sepia(1) saturate(5) hue-rotate(10deg);">
         <div class="space-x-6 text-sm font-medium uppercase tracking-widest text-gray-500">
-            <a href="https://github.com/gabriel-git24" class="hover:text-emerald-700">GitHub</a>
-            <a href="#" class="hover:text-emerald-700">LinkedIn</a>
+            <a href="https://github.com/gabriel-git24" target="_blank" class="hover:text-emerald-700">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" class="hover:text-emerald-700">LinkedIn</a>
         </div>
     </nav>
 
@@ -37,16 +29,24 @@
         
         <header class="mb-16">
             <h1 class="text-6xl font-bold text-gray-900 mb-4 tracking-tight">Gabriel Osei</h1>
-            <p class="text-2xl text-emerald-700 font-light">
-                Data Scientist & Researcher specializing in Agricultural Machine Learning
+            <p class="text-2xl text-emerald-700 font-light mb-6">
+                Data Scientist & Machine Learning Researcher
             </p>
+            <div class="flex flex-wrap gap-2">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">TensorFlow</span>
+                <span class="tech-pill">SQL</span>
+                <span class="tech-pill">R</span>
+                <span class="tech-pill">Power BI</span>
+                <span class="tech-pill">CNNs</span>
+            </div>
         </header>
 
         <section class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
             <div class="md:col-span-2">
-                <h3 class="text-xs uppercase tracking-widest text-gray-400 font-bold mb-6">Background</h3>
+                <h3 class="text-xs uppercase tracking-widest text-gray-400 font-bold mb-6 italic">The Journey</h3>
                 <p class="text-lg leading-relaxed text-gray-700">
-                    With a foundation in <strong>Agricultural Economics</strong> and currently pursuing an <strong>M.S. in Mathematics</strong>, I bridge the gap between complex field data and predictive modeling. I focus on developing high-accuracy diagnostic systems and automation tools that drive sustainable agricultural outcomes.
+                    Hi, I'm Gabriel. Welcome to my journey of discovery. From the applied theories of economics to designing and building machine learning models in agriculture and neuroscience—there are no boundaries here. I focus on turning complex data into sustainable, real-world solutions.
                 </p>
             </div>
             <div class="bg-gray-50 p-6 rounded-lg border border-gray-100">
@@ -63,32 +63,38 @@
         <section class="space-y-12 mb-20">
             <h2 class="text-3xl font-bold text-gray-900">Selected Research & Projects</h2>
             
-            <div class="section-accent pl-8 py-2">
-                <h4 class="text-xl font-bold text-gray-900">PodProtect: Cacao Health Diagnostics</h4>
+            <div class="section-accent pl-8 py-4">
+                <a href="https://github.com/gabriel-git24/podprotect" target="_blank" class="group inline-flex items-center">
+                    <h4 class="text-xl font-bold text-gray-900 group-hover:text-emerald-700 transition-colors">PodProtect: Cacao Health Diagnostics</h4>
+                    <svg class="w-4 h-4 ml-2 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
                 <p class="text-gray-600 mt-2 mb-4">Developed a Convolutional Neural Network (CNN) to classify cacao pod health with 80% accuracy, facilitating early disease detection in tropical agriculture.</p>
                 <div class="flex gap-3">
-                    <span class="text-[11px] font-bold text-emerald-700 border border-emerald-200 px-2 py-1 rounded">TENSORFLOW</span>
-                    <span class="text-[11px] font-bold text-emerald-700 border border-emerald-200 px-2 py-1 rounded">KERAS</span>
-                    <span class="text-[11px] font-bold text-emerald-700 border border-emerald-200 px-2 py-1 rounded">IMAGE CLASSIFICATION</span>
+                    <span class="text-[10px] font-bold text-emerald-700 tracking-wider">TENSORFLOW</span>
+                    <span class="text-[10px] font-bold text-emerald-700 tracking-wider">KERAS</span>
+                    <span class="text-[10px] font-bold text-emerald-700 tracking-wider">IMAGE CLASSIFICATION</span>
                 </div>
             </div>
 
-            <div class="section-accent pl-8 py-2">
-                <h4 class="text-xl font-bold text-gray-900">TIAER Systems Automation</h4>
+            <div class="section-accent pl-8 py-4">
+                <a href="https://github.com/gabriel-git24" target="_blank" class="group inline-flex items-center">
+                    <h4 class="text-xl font-bold text-gray-900 group-hover:text-emerald-700 transition-colors">TIAER Systems Automation</h4>
+                    <svg class="w-4 h-4 ml-2 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
                 <p class="text-gray-600 mt-2 mb-4">Architected an automated monitoring system using Python and SQL to track institutional web infrastructure, significantly reducing manual oversight time.</p>
                 <div class="flex gap-3">
-                    <span class="text-[11px] font-bold text-emerald-700 border border-emerald-200 px-2 py-1 rounded">SQL</span>
-                    <span class="text-[11px] font-bold text-emerald-700 border border-emerald-200 px-2 py-1 rounded">PYTHON</span>
-                    <span class="text-[11px] font-bold text-emerald-700 border border-emerald-200 px-2 py-1 rounded">AUTOMATION</span>
+                    <span class="text-[10px] font-bold text-emerald-700 tracking-wider">SQL</span>
+                    <span class="text-[10px] font-bold text-emerald-700 tracking-wider">PYTHON</span>
+                    <span class="text-[10px] font-bold text-emerald-700 tracking-wider">AUTOMATION</span>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="max-w-4xl mx-auto pt-10 border-t border-gray-100 flex justify-between items-center text-gray-400 text-xs">
+    <footer class="max-w-4xl mx-auto pt-10 border-t border-gray-100 flex justify-between items-center text-gray-400 text-xs font-bold tracking-widest uppercase">
         <p>&copy; 2026 Gabriel Osei</p>
-        <p>Tarleton State University // Texas</p>
+        <p>Tarleton State University // Stephenville, Texas</p>
     </footer>
 
 </body>
