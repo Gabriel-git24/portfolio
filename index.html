@@ -16,7 +16,8 @@
         body { font-family: 'Outfit', sans-serif; background-color: #fcfcfc; color: #1a202c; }
         .section-accent { border-left: 4px solid #047857; transition: all 0.3s ease; }
         .section-accent:hover { border-left: 4px solid #059669; background-color: #f8fafc; }
-        .tech-box { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; transition: all 0.3s; }
+        .tech-box { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; transition: all 0.3s; height: 100%; }
+        .tech-box:hover { border-color: #047857; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); }
         .tech-tag { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; color: #4a5568; font-weight: 600; }
         .tech-tag i { font-size: 1.4rem; }
         .profile-img-rect { width: 180px; height: 220px; object-fit: cover; border-radius: 12px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
@@ -27,11 +28,13 @@
 
     <nav class="fixed top-0 w-full z-50 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="font-bold tracking-tighter text-xl">G.OSEI</span>
+            <span class="font-bold tracking-tighter text-xl">GO</span>
             <div class="space-x-8 text-xs font-bold uppercase tracking-widest text-gray-500">
                 <a href="#home" class="hover:text-emerald-700 transition">Home</a>
+                <a href="#stack" class="hover:text-emerald-700 transition">Tech Stack</a>
                 <a href="#journey" class="hover:text-emerald-700 transition">Journey</a>
                 <a href="#projects" class="hover:text-emerald-700 transition">Projects</a>
+                <a href="https://linkedin.com/in/gosei23" target="_blank" class="hover:text-emerald-700 transition">LinkedIn</a>
                 <a href="https://github.com/gabriel-git24" target="_blank" class="bg-emerald-700 text-white px-4 py-2 rounded-md hover:bg-emerald-800 transition">GitHub</a>
             </div>
         </div>
@@ -39,48 +42,57 @@
 
     <main class="max-w-6xl mx-auto px-6 pt-32">
         
-        <section id="home" class="min-h-[70vh] flex flex-col justify-center mb-20">
+        <section id="home" class="min-h-[60vh] flex flex-col justify-center mb-20">
             <div class="flex flex-col-reverse md:flex-row md:items-center justify-between gap-12" data-aos="fade-up">
                 <div class="max-w-2xl">
                     <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight">Gabriel Osei</h1>
                     <p class="text-2xl md:text-3xl text-emerald-800 font-light leading-relaxed mb-8">
-                        Hi, I'm Gabriel. Welcome to my journey. From <strong>applied economics</strong> to building <strong>ML models</strong> in agriculture and neuroscience—there are no boundaries here.
+                        Hi, I'm Gabriel. Welcome to my journey! From applied economics to building ML models in agriculture and neuroscience. There are no boundaries here...
                     </p>
                     <div class="flex gap-4">
                         <a href="#projects" class="border-2 border-emerald-700 text-emerald-700 px-6 py-3 rounded-full font-bold hover:bg-emerald-700 hover:text-white transition">View My Work</a>
-                        <a href="#journey" class="px-6 py-3 rounded-full font-bold text-gray-500 hover:text-gray-900 transition">My Experience →</a>
+                        <a href="#stack" class="px-6 py-3 rounded-full font-bold text-gray-500 hover:text-gray-900 transition">Technical Skills ↓</a>
                     </div>
                 </div>
                 <img src="WhatsApp Image 2026-04-24 at 8.32.23 AM.jpeg" alt="Gabriel Osei" class="profile-img-rect" data-aos="zoom-in">
             </div>
+        </section>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-24" data-aos="fade-up" data-aos-delay="200">
+        <section id="stack" class="py-20 border-t border-gray-100">
+            <h2 class="text-3xl font-bold mb-12" data-aos="fade-right">Tech Stack</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" data-aos="fade-up">
                 <div class="tech-box">
-                    <h3 class="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold mb-4">Programming</h3>
-                    <div class="space-y-3">
-                        <div class="tech-tag"><i class="devicon-python-plain colored"></i> Python / C++</div>
+                    <h3 class="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold mb-5 border-b pb-2">Programming</h3>
+                    <div class="space-y-4">
+                        <div class="tech-tag"><i class="devicon-python-plain colored"></i> Python</div>
+                        <div class="tech-tag"><i class="devicon-cplusplus-plain colored"></i> C++</div>
                         <div class="tech-tag"><i class="devicon-r-original colored"></i> R Language</div>
+                        <div class="tech-tag"><i class="devicon-html5-plain colored"></i> HTML5</div>
                     </div>
                 </div>
                 <div class="tech-box">
-                    <h3 class="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold mb-4">Data & BI</h3>
-                    <div class="space-y-3">
+                    <h3 class="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold mb-5 border-b pb-2">Data & BI</h3>
+                    <div class="space-y-4">
                         <div class="tech-tag"><i class="devicon-azuresqldatabase-plain colored"></i> SQL / Postgres</div>
-                        <div class="tech-tag"><i class="devicon-tableau-plain colored"></i> Tableau / Power BI</div>
+                        <div class="tech-tag"><i class="devicon-tableau-plain colored"></i> Tableau</div>
+                        <div class="tech-tag"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Microsoft_Power_BI_Logo.svg" class="w-5 h-5"> Power BI</div>
                     </div>
                 </div>
                 <div class="tech-box">
-                    <h3 class="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold mb-4">ML Frameworks</h3>
-                    <div class="space-y-3">
+                    <h3 class="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold mb-5 border-b pb-2">ML Frameworks</h3>
+                    <div class="space-y-4">
                         <div class="tech-tag"><i class="devicon-tensorflow-original colored"></i> TensorFlow</div>
                         <div class="tech-tag"><i class="devicon-pytorch-original colored"></i> PyTorch</div>
+                        <div class="tech-tag"><i class="devicon-scikitlearn-plain colored"></i> Scikit-learn</div>
+                        <div class="tech-tag"><i class="devicon-pandas-plain colored"></i> Pandas / Numpy</div>
                     </div>
                 </div>
                 <div class="tech-box">
-                    <h3 class="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold mb-4">Automation</h3>
-                    <div class="space-y-3">
+                    <h3 class="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold mb-5 border-b pb-2">Automation</h3>
+                    <div class="space-y-4">
                         <div class="tech-tag"><i class="devicon-selenium-original colored"></i> Selenium</div>
                         <div class="tech-tag"><i class="devicon-beautifulsoup-plain colored"></i> BeautifulSoup</div>
+                        <div class="tech-tag"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/SCIPY_LOGO.svg" class="w-5 h-5"> SciPy</div>
                     </div>
                 </div>
             </div>
@@ -110,8 +122,8 @@
                             <p class="text-gray-500 text-sm">B.R.A.I.N. Lab (Neuroscience focus) • Present</p>
                         </div>
                         <div>
-                            <h4 class="font-bold text-lg text-gray-900">Systems Automation</h4>
-                            <p class="text-gray-500 text-sm">TIAER • 2025</p>
+                            <h4 class="font-bold text-lg text-gray-900">Graduate Research Assistant</h4>
+                            <p class="text-gray-500 text-sm">Texas Institute for Applied Environmental Research (TIAER) • 2025</p>
                         </div>
                     </div>
                 </div>
@@ -119,7 +131,7 @@
         </section>
 
         <section id="projects" class="py-20 border-t border-gray-100">
-            <h2 class="text-3xl font-bold mb-12" data-aos="fade-right">Selected Research</h2>
+            <h2 class="text-3xl font-bold mb-12" data-aos="fade-right">Projects</h2>
             <div class="grid grid-cols-1 gap-8">
                 <div class="section-accent pl-8 py-6" data-aos="fade-up">
                     <a href="https://github.com/gabriel-git24/podprotect" target="_blank" class="group">
@@ -145,7 +157,10 @@
     <footer class="bg-gray-50 py-12 mt-20 border-t border-gray-100">
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-gray-400 text-[10px] uppercase font-bold tracking-[0.2em]">
             <p>&copy; 2026 GABRIEL OSEI</p>
-            <p>Tarleton State University // Data Scientist</p>
+            <div class="flex gap-6 my-4 md:my-0">
+                <a href="https://github.com/gabriel-git24" target="_blank" class="hover:text-emerald-700">GitHub</a>
+                <a href="https://linkedin.com/in/gosei23" target="_blank" class="hover:text-emerald-700">LinkedIn</a>
+            </div>
         </div>
     </footer>
 
