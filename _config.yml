@@ -13,7 +13,13 @@ author:
   name: "Gabriel Osei"
   bio: "Data Scientist | ML Researcher | Ag-Tech"
   location: "Texas, USA"
-  avatar: "me.jpeg" # This puts your photo in the sidebar
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/gabriel-git24"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "your-linkedin-link-here"
 
 # Required Plugins
 plugins:
