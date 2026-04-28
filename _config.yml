@@ -1,20 +1,19 @@
 # Site Settings
 title: "GABRIEL OSEI"
 description: "Data Scientist | Ag-Tech | Gamer"
-logo: "WhatsApp Image 2026-04-24 at 8.32.23 AM.jpeg"
 url: "https://gabriel-git24.github.io"
 baseurl: "/portfolio"
 
 # Theme Settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "dark" # This provides the smooth, dark gamer-tech feel
+minimal_mistakes_skin: "dark"
 
 # Sidebar / Author Profile
 author:
   name: "Gabriel Osei"
   bio: "Data Scientist | ML Researcher | Ag-Tech"
   location: "Texas, USA"
-  avatar: "WhatsApp Image 2026-04-24 at 8.32.23 AM.jpeg" # This puts your photo in the sidebar
+  avatar: "me.jpeg" # This puts your photo in the sidebar
 
 # Required Plugins
 plugins:
