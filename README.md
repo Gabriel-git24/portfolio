@@ -1,3 +1,6 @@
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00b4d8&height=200&section=header&text=GABRIEL%20OSEI&fontSize=70&animation=fadeIn&fontAlignY=35" />
+</div>
 # ⚡ GABRIEL_OSEI.exe
 
 > `[SYSTEM STATUS]: Active`
