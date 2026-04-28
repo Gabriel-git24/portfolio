@@ -3,108 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Osei | System Portfolio</title>
+    <title>Gabriel Osei | Data Scientist Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background: radial-gradient(circle at top, #1a202c 0%, #0d1117 100%);
-            color: #e2e8f0;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Outfit', sans-serif;
+            background-color: #fcfcfc;
+            color: #1a202c;
         }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
+        .section-accent {
+            border-left: 4px solid #047857; /* Emerald Green */
         }
-        .glass-card:hover {
-            border: 1px solid #FFD700;
-            transform: translateY(-5px);
-        }
-        .stat-bar {
-            height: 8px;
-            background: #2d3748;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-        .stat-progress {
-            height: 100%;
-            background: linear-gradient(90deg, #48bb78, #FFD700);
-        }
-        .gye-nyame-gold {
-            filter: invert(84%) sepia(87%) saturate(415%) hue-rotate(354deg) brightness(101%) contrast(105%);
+        .adinkra-watermark {
+            opacity: 0.05;
+            position: absolute;
+            z-index: -1;
         }
     </style>
 </head>
-<body class="p-4 md:p-10">
+<body class="p-6 md:p-16">
 
-    <header class="max-w-5xl mx-auto text-center mb-16">
+    <nav class="max-w-4xl mx-auto flex justify-between items-center mb-20">
         <img src="https://raw.githubusercontent.com/thebe-digital/adinkra-icons/master/svg/gye-nyame.svg" 
-             class="w-20 mx-auto mb-6 gye-nyame-gold animate-pulse" alt="Gye Nyame">
-        
-        <h1 class="text-5xl md:text-7xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-green-500 mb-4">
-            GABRIEL OSEI
-        </h1>
-        <p class="text-xl text-gray-400 font-light tracking-widest uppercase mb-6">
-            Data Scientist // Ag-Tech // Gamer
-        </p>
-        
-        <div class="inline-block px-4 py-2 glass-card rounded-full text-sm font-mono text-green-400">
-            [Status: System Online] • [Region: Ghana 🇬🇭]
+             class="w-10 opacity-80" alt="Gye Nyame">
+        <div class="space-x-6 text-sm font-medium uppercase tracking-widest text-gray-500">
+            <a href="https://github.com/gabriel-git24" class="hover:text-emerald-700">GitHub</a>
+            <a href="#" class="hover:text-emerald-700">LinkedIn</a>
         </div>
-    </header>
+    </nav>
 
-    <main class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <main class="max-w-4xl mx-auto">
         
-        <section class="md:col-span-1 space-y-6">
-            <div class="glass-card p-6 rounded-2xl">
-                <h3 class="text-yellow-500 font-bold mb-4 uppercase tracking-wider text-sm">Player Stats</h3>
-                <div class="space-y-4">
-                    <div>
-                        <div class="flex justify-between text-xs mb-1"><span>Python</span><span>90%</span></div>
-                        <div class="stat-bar"><div class="stat-progress" style="width: 90%"></div></div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between text-xs mb-1"><span>ML / CNN</span><span>85%</span></div>
-                        <div class="stat-bar"><div class="stat-progress" style="width: 85%"></div></div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between text-xs mb-1"><span>SQL / Automation</span><span>80%</span></div>
-                        <div class="stat-bar"><div class="stat-progress" style="width: 80%"></div></div>
-                    </div>
-                </div>
+        <header class="mb-16">
+            <h1 class="text-6xl font-bold text-gray-900 mb-4 tracking-tight">Gabriel Osei</h1>
+            <p class="text-2xl text-emerald-700 font-light">
+                Data Scientist & Researcher specializing in Agricultural Machine Learning
+            </p>
+        </header>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
+            <div class="md:col-span-2">
+                <h3 class="text-xs uppercase tracking-widest text-gray-400 font-bold mb-6">Background</h3>
+                <p class="text-lg leading-relaxed text-gray-700">
+                    With a foundation in <strong>Agricultural Economics</strong> and currently pursuing an <strong>M.S. in Mathematics</strong>, I bridge the gap between complex field data and predictive modeling. I focus on developing high-accuracy diagnostic systems and automation tools that drive sustainable agricultural outcomes.
+                </p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg border border-gray-100">
+                <h3 class="text-xs uppercase tracking-widest text-gray-400 font-bold mb-4">Core Competencies</h3>
+                <ul class="text-sm space-y-2 text-gray-600 font-medium">
+                    <li>• Computer Vision (CNNs)</li>
+                    <li>• Python & R Programming</li>
+                    <li>• SQL & Process Automation</li>
+                    <li>• Data Wrangling & EDA</li>
+                </ul>
             </div>
         </section>
 
-        <section class="md:col-span-2 space-y-6">
-            <h3 class="text-white font-bold text-xl mb-4 flex items-center">
-                <i class="fa-solid fa-scroll mr-3 text-yellow-500"></i> Main Quests
-            </h3>
-
-            <div class="glass-card p-6 rounded-2xl">
-                <h4 class="text-xl font-bold text-green-400 mb-2">Project: PodProtect</h4>
-                <p class="text-gray-400 text-sm mb-4">Developed a Deep Learning diagnostic system for Cacao pod health using CNNs. Achieved 80% accuracy in field conditions.</p>
-                <div class="flex gap-2">
-                    <span class="text-[10px] bg-gray-800 px-2 py-1 rounded">TensorFlow</span>
-                    <span class="text-[10px] bg-gray-800 px-2 py-1 rounded">Computer Vision</span>
+        <section class="space-y-12 mb-20">
+            <h2 class="text-3xl font-bold text-gray-900">Selected Research & Projects</h2>
+            
+            <div class="section-accent pl-8 py-2">
+                <h4 class="text-xl font-bold text-gray-900">PodProtect: Cacao Health Diagnostics</h4>
+                <p class="text-gray-600 mt-2 mb-4">Developed a Convolutional Neural Network (CNN) to classify cacao pod health with 80% accuracy, facilitating early disease detection in tropical agriculture.</p>
+                <div class="flex gap-3">
+                    <span class="text-[11px] font-bold text-emerald-700 border border-emerald-200 px-2 py-1 rounded">TENSORFLOW</span>
+                    <span class="text-[11px] font-bold text-emerald-700 border border-emerald-200 px-2 py-1 rounded">KERAS</span>
+                    <span class="text-[11px] font-bold text-emerald-700 border border-emerald-200 px-2 py-1 rounded">IMAGE CLASSIFICATION</span>
                 </div>
             </div>
 
-            <div class="glass-card p-6 rounded-2xl">
-                <h4 class="text-xl font-bold text-green-400 mb-2">TIAER Dashboard</h4>
-                <p class="text-gray-400 text-sm mb-4">Automated website monitoring and SQL logging system for Texas Institute for Applied Environmental Research.</p>
-                <div class="flex gap-2">
-                    <span class="text-[10px] bg-gray-800 px-2 py-1 rounded">SQL</span>
-                    <span class="text-[10px] bg-gray-800 px-2 py-1 rounded">Python Automation</span>
+            <div class="section-accent pl-8 py-2">
+                <h4 class="text-xl font-bold text-gray-900">TIAER Systems Automation</h4>
+                <p class="text-gray-600 mt-2 mb-4">Architected an automated monitoring system using Python and SQL to track institutional web infrastructure, significantly reducing manual oversight time.</p>
+                <div class="flex gap-3">
+                    <span class="text-[11px] font-bold text-emerald-700 border border-emerald-200 px-2 py-1 rounded">SQL</span>
+                    <span class="text-[11px] font-bold text-emerald-700 border border-emerald-200 px-2 py-1 rounded">PYTHON</span>
+                    <span class="text-[11px] font-bold text-emerald-700 border border-emerald-200 px-2 py-1 rounded">AUTOMATION</span>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="text-center mt-20 text-gray-600 text-xs tracking-widest uppercase">
-        Built from scratch by Gabriel Osei // 2026
+    <footer class="max-w-4xl mx-auto pt-10 border-t border-gray-100 flex justify-between items-center text-gray-400 text-xs">
+        <p>&copy; 2026 Gabriel Osei</p>
+        <p>Tarleton State University // Texas</p>
     </footer>
 
 </body>
