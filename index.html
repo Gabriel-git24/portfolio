@@ -6,110 +6,138 @@
     <title>Gabriel Osei | Data Scientist</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        body { font-family: 'Outfit', sans-serif; background-color: #fcfcfc; color: #1a202c; }
+        body { font-family: 'Outfit', sans-serif; background-color: #fcfcfc; color: #1a202c; overflow-x: hidden; }
         .section-accent { border-left: 4px solid #047857; transition: all 0.3s ease; }
         .section-accent:hover { border-left: 4px solid #059669; background-color: #f8fafc; }
-        .tech-box { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.25rem; transition: all 0.2s; }
-        .tech-box:hover { border-color: #047857; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
-        .tech-tag { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: #4a5568; font-weight: 500; }
-        .tech-tag i { color: #047857; width: 16px; text-align: center; }
+        .tech-box { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.5rem; height: 100%; transition: all 0.3s; }
+        .tech-box:hover { border-color: #047857; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); }
+        .tech-tag { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; color: #4a5568; font-weight: 600; }
+        .tech-tag i { font-size: 1.4rem; }
+        /* Professional Rectangular Photo */
+        .profile-img-rect { 
+            width: 150px; 
+            height: 180px; 
+            object-fit: cover; 
+            border-radius: 8px; 
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
     </style>
 </head>
 <body class="p-6 md:p-12 lg:px-32 lg:py-16">
 
-    <nav class="max-w-5xl mx-auto flex justify-end items-center mb-12">
+    <nav class="max-w-6xl mx-auto flex justify-end items-center mb-12" data-aos="fade-down">
         <div class="space-x-6 text-xs font-bold uppercase tracking-widest text-gray-400">
             <a href="https://github.com/gabriel-git24" target="_blank" class="hover:text-emerald-700">GitHub</a>
-            <a href="#" target="_blank" class="hover:text-emerald-700">LinkedIn</a>
+            <a href="#" target="_blank" class="hover:text-emerald-700 font-bold text-emerald-600">LinkedIn</a>
         </div>
     </nav>
 
-    <main class="max-w-5xl mx-auto">
+    <main class="max-w-6xl mx-auto">
         
-        <header class="mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-2 tracking-tight">Gabriel Osei</h1>
-            <p class="text-xl text-emerald-700 font-light italic">
-                Data Scientist & Machine Learning Researcher
-            </p>
+        <header class="flex flex-col-reverse md:flex-row md:items-end justify-between mb-20 gap-8" data-aos="fade-right">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-2 tracking-tight">Gabriel Osei</h1>
+                <p class="text-xl text-emerald-700 font-light italic">
+                    Data Scientist & Machine Learning Researcher
+                </p>
+            </div>
+            <img src="WhatsApp Image 2026-04-24 at 8.32.23 AM.jpeg" alt="Gabriel Osei" class="profile-img-rect">
         </header>
 
-        <section class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20" data-aos="fade-up" data-aos-delay="200">
             <div class="tech-box">
-                <h3 class="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold mb-4">Programming</h3>
-                <div class="grid grid-cols-2 gap-3">
-                    <div class="tech-tag"><i class="fa-brands fa-python"></i> Python</div>
-                    <div class="tech-tag"><i class="fa-solid fa-database"></i> SQL</div>
-                    <div class="tech-tag"><i class="fa-solid fa-chart-line"></i> R</div>
-                    <div class="tech-tag"><i class="fa-solid fa-code"></i> C++</div>
+                <h3 class="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold mb-5 border-b pb-2">Languages</h3>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="tech-tag"><i class="devicon-python-plain colored"></i> Python</div>
+                    <div class="tech-tag"><i class="devicon-azuresqldatabase-plain colored"></i> SQL</div>
+                    <div class="tech-tag"><i class="devicon-r-original colored"></i> R</div>
+                    <div class="tech-tag"><i class="devicon-cplusplus-plain colored"></i> C++</div>
                 </div>
             </div>
 
             <div class="tech-box">
-                <h3 class="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold mb-4">Databases</h3>
-                <div class="space-y-3">
-                    <div class="tech-tag"><i class="fa-solid fa-server"></i> SQL Server / Postgres</div>
+                <h3 class="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold mb-5 border-b pb-2">Viz & Database</h3>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="tech-tag"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</div>
+                    <div class="tech-tag"><i class="devicon-tableau-plain colored"></i> Tableau</div>
+                    <div class="tech-tag">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Microsoft_Power_BI_Logo.svg" class="w-5 h-5"> 
+                        Power BI
+                    </div>
                 </div>
             </div>
 
             <div class="tech-box">
-                <h3 class="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold mb-4">ML & Data Science</h3>
-                <div class="grid grid-cols-2 gap-3">
-                    <div class="tech-tag"><i class="fa-solid fa-brain"></i> TensorFlow</div>
-                    <div class="tech-tag"><i class="fa-solid fa-layer-group"></i> PyTorch</div>
-                    <div class="tech-tag"><i class="fa-solid fa-microchip"></i> Scikit-learn</div>
-                    <div class="tech-tag"><i class="fa-solid fa-table"></i> Pandas</div>
-                    <div class="tech-tag"><i class="fa-solid fa-calculator"></i> NumPy</div>
-                    <div class="tech-tag"><i class="fa-solid fa-vial"></i> SciPy</div>
+                <h3 class="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold mb-5 border-b pb-2">ML Libraries</h3>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="tech-tag"><i class="devicon-tensorflow-original colored"></i> TensorFlow</div>
+                    <div class="tech-tag"><i class="devicon-pytorch-original colored"></i> PyTorch</div>
+                    <div class="tech-tag"><i class="devicon-pandas-original colored"></i> Pandas</div>
+                    <div class="tech-tag"><i class="devicon-numpy-original colored"></i> NumPy</div>
+                </div>
+            </div>
+
+            <div class="tech-box">
+                <h3 class="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold mb-5 border-b pb-2">Automation</h3>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="tech-tag"><i class="devicon-selenium-original colored"></i> Selenium</div>
+                    <div class="tech-tag"><i class="devicon-beautifulsoup-plain colored"></i> Beautiful Soup</div>
+                    <div class="tech-tag"><i class="devicon-scikitlearn-plain colored"></i> Scikit-learn</div>
+                    <div class="tech-tag"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/SCIPY_LOGO.svg" class="w-5 h-5"> SciPy</div>
                 </div>
             </div>
         </section>
 
-        <section class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
-            <div class="md:col-span-2">
-                <h3 class="text-xs uppercase tracking-widest text-gray-400 font-bold mb-6">The Journey</h3>
-                <p class="text-lg leading-relaxed text-gray-700">
-                    Hi, I'm Gabriel. Welcome to my journey of discovery. From applied economics to building machine learning models in agriculture and neuroscience—there are no boundaries here. I focus on turning complex data into sustainable, real-world solutions.
-                </p>
-            </div>
+        <section class="mb-20 max-w-3xl" data-aos="fade-up">
+            <h3 class="text-xs uppercase tracking-widest text-gray-400 font-bold mb-6 italic">The Journey</h3>
+            <p class="text-lg leading-relaxed text-gray-700">
+                Hi, I'm Gabriel. From applied economics to building machine learning models in agriculture and neuroscience—there are no boundaries here. I focus on turning complex data into sustainable, real-world solutions.
+            </p>
         </section>
 
         <section class="space-y-8 mb-20">
-            <h2 class="text-2xl font-bold text-gray-900 border-b border-gray-100 pb-4">Selected Projects</h2>
+            <h2 class="text-2xl font-bold text-gray-900 border-b border-gray-100 pb-4" data-aos="fade-right">Selected Projects</h2>
             
-            <div class="section-accent pl-8 py-4">
-                <a href="https://github.com/gabriel-git24/podprotect" target="_blank" class="group inline-flex items-center">
+            <div class="section-accent pl-8 py-4" data-aos="fade-up">
+                <a href="https://github.com/gabriel-git24/podprotect" target="_blank" class="group flex items-center gap-2">
                     <h4 class="text-xl font-bold text-gray-900 group-hover:text-emerald-700 transition-colors">PodProtect: Cacao Health Diagnostics</h4>
-                    <i class="fa-solid fa-arrow-up-right-from-square ml-3 text-[10px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                    <span class="text-gray-300 group-hover:text-emerald-700 transition-colors italic">View ↗</span>
                 </a>
                 <p class="text-gray-600 mt-2 mb-4">A CNN-based image classification system achieved 80% accuracy in diagnosing cacao pod diseases, focused on optimizing tropical crop yields.</p>
-                <div class="flex gap-4 text-[10px] font-bold text-emerald-800 tracking-wider">
-                    <span>DEEP LEARNING</span>
-                    <span>COMPUTER VISION</span>
+                <div class="flex gap-4 text-[10px] font-bold text-emerald-800 tracking-wider uppercase">
+                    <span>Deep Learning</span>
+                    <span>Computer Vision</span>
                 </div>
             </div>
 
-            <div class="section-accent pl-8 py-4">
-                <a href="https://github.com/gabriel-git24" target="_blank" class="group inline-flex items-center">
+            <div class="section-accent pl-8 py-4" data-aos="fade-up">
+                <a href="https://github.com/gabriel-git24" target="_blank" class="group flex items-center gap-2">
                     <h4 class="text-xl font-bold text-gray-900 group-hover:text-emerald-700 transition-colors">TIAER Infrastructure Automation</h4>
-                    <i class="fa-solid fa-arrow-up-right-from-square ml-3 text-[10px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                    <span class="text-gray-300 group-hover:text-emerald-700 transition-colors italic">View ↗</span>
                 </a>
                 <p class="text-gray-600 mt-2 mb-4">Architected an automated monitoring system using Python and SQL to track institutional web infrastructure, significantly reducing manual oversight time.</p>
-                <div class="flex gap-4 text-[10px] font-bold text-emerald-800 tracking-wider">
+                <div class="flex gap-4 text-[10px] font-bold text-emerald-800 tracking-wider uppercase">
                     <span>SQL</span>
-                    <span>PYTHON</span>
-                    <span>AUTOMATION</span>
+                    <span>Python</span>
+                    <span>Automation</span>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="max-w-5xl mx-auto pt-10 border-t border-gray-100 flex justify-between text-gray-400 text-[10px] uppercase tracking-widest font-bold">
-        <p>&copy; 2026 Gabriel Osei </p>
+    <footer class="max-w-6xl mx-auto pt-10 border-t border-gray-100 flex justify-between text-gray-400 text-[10px] uppercase tracking-widest font-bold">
+        <p>&copy; 2026 Gabriel Osei // Tarleton State University</p>
         <p>Built with Purpose</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
 </body>
 </html>
