@@ -1,8 +1,10 @@
 <div align="Center">
   <h1> 🌍 GABRIEL OSEI 🧠 </h1>
-  <p><b>Data Scientist | Ag-Tech Researcher | Automation Specialist</b></p>
+  <img src="https://raw.githubusercontent.com/thebe-digital/adinkra-icons/master/svg/gye-nyame.svg" width="80" style="filter: invert(84%) sepia(87%) saturate(415%) hue-rotate(354deg) brightness(101%) contrast(105%);" />
 
-  <code>[ Field Data ] + [ Deep Learning ] = [ Sustainable Solutions ]</code>
+  <img src="https://capsule-render.vercel.app/api?type=soft&color=black&height=120&section=header&text=GABRIEL%20OSEI&fontSize=60&fontColor=FFD700" />
+  
+  <p><b>Data Scientist | Ag-Tech Researcher | Automation Specialist</b></p>
 </div>
 
 ### Tech Stack
