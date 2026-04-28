@@ -1,4 +1,4 @@
-<div align="Right">
+<div align="Center">
   
   <img src="https://raw.githubusercontent.com/thebe-digital/adinkra-icons/master/svg/gye-nyame.svg" width="80" style="filter: invert(84%) sepia(87%) saturate(415%) hue-rotate(354deg) brightness(101%) contrast(105%);" />
 
