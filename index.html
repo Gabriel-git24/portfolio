@@ -20,7 +20,21 @@
         .tech-box:hover { border-color: #047857; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); }
         .tech-tag { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; color: #4a5568; font-weight: 600; }
         .tech-tag i { font-size: 1.4rem; }
-        .profile-img-rect { width: 180px; height: 220px; object-fit: cover; border-radius: 12px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        
+        /* Updated: Larger Image */
+        .profile-img-rect { width: 320px; height: 380px; object-fit: cover; border-radius: 12px; box-shadow:0 20px 25px -5px rgba(0,0,0,0.1); }
+        
+        /* Fixed Spelling: #typewriter cursor */
+        #typewriter::after {
+            content: "|";
+            margin-left:2px;
+            animation: blink 1.2s infinite;
+            font-weight: bold;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
         nav { backdrop-filter: blur(10px); background: rgba(252, 252, 252, 0.8); }
     </style>
 </head>
@@ -45,15 +59,20 @@
         <section id="home" class="min-h-[60vh] flex flex-col justify-center mb-20">
             <div class="flex flex-col-reverse md:flex-row md:items-center justify-between gap-12" data-aos="fade-up">
                 <div class="max-w-2xl">
-                    <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight">Gabriel Osei</h1>
-                    <p class="text-2xl md:text-3xl text-emerald-800 font-light leading-relaxed mb-8">
-                        Hi, I'm Gabriel. Welcome to my journey! From applied economics to building ML models in agriculture and neuroscience. There are no boundaries here...
+                    <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                        Gabriel Osei
+                    </h1>
+                    
+                    <p id="typewriter-parent" class="text-base md:text-lg text-emerald-800 font-light leading-relaxed mb-8 min-h-[4.5rem]">
+                        <span id="typewriter"></span>
                     </p>
+                    
                     <div class="flex gap-4">
                         <a href="#projects" class="border-2 border-emerald-700 text-emerald-700 px-6 py-3 rounded-full font-bold hover:bg-emerald-700 hover:text-white transition">View My Work</a>
                         <a href="#stack" class="px-6 py-3 rounded-full font-bold text-gray-500 hover:text-gray-900 transition">Technical Skills ↓</a>
                     </div>
                 </div>
+                
                 <img src="me.jpeg" alt="Gabriel Osei" class="profile-img-rect" data-aos="zoom-in">
             </div>
         </section>
@@ -167,6 +186,22 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1000, once: true });
+
+        const textToType = "Hi, I'm Gabriel. Welcome to my journey! From applied economics to building ML models in agriculture and neuroscience. There are no boundaries here...";
+        const typingSpeed = 40; 
+        let currentCharIndex = 0;
+        const targetElement = document.getElementById("typewriter");
+
+        function type() {
+            if (currentCharIndex < textToType.length) {
+                targetElement.textContent += textToType.charAt(currentCharIndex);
+                currentCharIndex++;
+                setTimeout(type, typingSpeed);
+            }
+        }
+
+        // Start typing after a short delay
+        setTimeout(type, 1000); 
     </script>
 </body>
 </html>
